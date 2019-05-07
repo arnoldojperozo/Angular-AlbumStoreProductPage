@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../product.service';
+import { Album } from '../album';
 import 'rxjs/add/operator/map';
 
 @Component({
@@ -9,7 +10,7 @@ import 'rxjs/add/operator/map';
 })
 export class ProductDescriptionComponent implements OnInit {
 
-  albumInfo;
+  albumInfo: Album;
 
   constructor(private _productService: ProductService) { }
 
